@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/all.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="container">
+            <a href=""class="navbar-brand">Logo</a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#menu" >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+           <div class="collapse navbar-collapse" id="menu">
+
+               <ul class="navbar-nav ml-auto">
+                   <li> <a href="" class="nav-link">Home</a></li>
+                   <li> <a href="" class="nav-link">About</a></li>
+                   <li> <a href="" class="nav-link">Contact</a></li>
+                   <li> <a href="#modalsignin" class="nav-link" data-toggle="modal"> Sign In</a></li>
+                   <li> <a href="#modal" class="nav-link"data-toggle="modal" data-target="#modal">Register</a></li>
+               </ul>
+           </div>
+        </div>
+    </nav>
+
+
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="card card-body">
+                        <ul class="nav nav-tabs">
+                            <li><a href="#hera" class="nav-link active" data-toggle="tab" >Hera</a></li>
+                            <li><a href="#shormi" class="nav-link" data-toggle="tab" >Shormi</a></li>
+                            <li><a href="#jenny" class="nav-link" data-toggle="tab" >Jenny</a></li>
+                        </ul>
+                        <div class="tab-content">
+                            <div id="hera" class="tab-pane fade show active">
+                                <p class="text-justify">
+                                    নিহত রাজনা বেগম (২০) উপজেলার আলীপুর গ্রামের জাকারিয়া আহমেদের (৩০) স্ত্রী। পাঁচ মাস আগে এ দম্পতির বিয়ে হয়। সপ্তাহখানেক আগে তাঁরা রসুলগঞ্জ বাজার এলাকায় ভাড়া বাসায় উঠেছিলেন।
+                                </p>
+                            </div>
+                            <div id="shormi" class="tab-pane fade">
+                                <p class="text-justify">
+                                    সময়কাল স্বাধীনতা–উত্তর বাংলাদেশ, ১৯৭২ সাল। আমার বাবা পরিবার নিয়ে আমাদের গ্রামের বাড়ি থেকে নারায়ণগঞ্জে এসে বসবাস শুরু করলেন। বঙ্গবন্ধু সড়ক ঘিরেই ছিল তখনকার নারায়ণগঞ্জ শহর।
+                            </div>
+                            <div id="jenny" class="tab-pane fade">
+                                <p class="text-justify">
+                                    শেরপুরের নকলা উপজেলার চন্দ্রকোনা এলাকার ভবনটি চন্দ্রকোনা কলেজের। ৭০টি চাকের খবর জানাজানি হওয়ার পর উৎসুক অনেকেই তা দেখতে ভবনের সামনে ভিড় করছেন। মৌমাছিগুলো ডাচ জাতের বন মৌমাছি।
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="card card-body">
+                        <ul class="nav nav-pills">
+                            <li> <a href="#home" class="nav-link active" data-toggle="pill">Home</a></li>
+                            <li> <a href="#about" class="nav-link" data-toggle="pill">About </a></li>
+                            <li> <a href="#contact" class="nav-link" data-toggle="pill">Contact</a></li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane fade show active" id="home">
+                                <h3 class="text-center">This is home page</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis deserunt laborum optio? Animi aperiam aspernatur consequatur magni praesentium quae quas repudiandae sed voluptate. Commodi dicta dolor fugit hic, nisi quo.
+                                </p>
+                            </div>
+                            <div class="tab-pane fade" id="about">
+                                <h3 class="text-center">This is about page</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem ducimus explicabo maxime non placeat praesentium quo tempore, veniam. Corporis expedita facere incidunt magnam non nulla quam quasi rerum voluptas voluptatibus.
+                                </p>
+                            </div>
+                            <div class="tab-pane fade" id="contact">
+                                <h3 class="text-center">This is contact page</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque beatae culpa cupiditate inventore iste molestias non nostrum pariatur placeat quos ratione sapiente soluta, totam! Aut eum id inventore officia rerum.
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="modal fade" data-backdrop="static" id="modalsignin">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Sign In</h3>
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="form-group row">
+                            <label for="email" class="col-md-4">Email</label>
+                            <div class="col-md-8">
+                                <input type="email" class="form-control" id="email">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="pass" class="col-md-4">Password</label>
+                            <div class="col-md-8">
+                                <input type="password" class="form-control" id="pass">
+                            </div>
+
+                        </div>
+                    </form>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-success">Submit</button>
+                    <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Close</button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="modal fade" data-backdrop="static" data-keyboard="false" id="modal">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Registration</h3>
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <form action="">
+                        <div class="form-group row">
+                            <label for="name" class="col-md-4 col-form-label">Name</label>
+                            <div class="col-md-8">
+                                <input type="text" id="name" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="mail" class="col-md-4 col-form-label">Email</label>
+                            <div class="col-md-8">
+                                <input type="email" id="mail" class="form-control" required>
+                            </div>
+
+                        </div>
+                        <div class="form-group row">
+                            <label for="phn" class="col-md-4 col-form-label">Contact No</label>
+                            <div class="col-md-8">
+                                <input type="number" id="phn" class="form-control">
+                            </div>
+
+                        </div>
+                        <div class="form-group row">
+                            <label for="pass" class="col-md-4 col-form-label">Password</label>
+                            <div class="col-md-8">
+                                <input type="password" id="phn" class="form-control">
+                            </div>
+
+                        </div>
+                        <div class="form-group row">
+                            <label for="address" class="col-md-4 col-form-label">Address</label>
+                            <div class="col-md-8">
+                                <textarea id="address" class="form-control" rows="5" cols="30"></textarea>
+                            </div>
+
+                        </div>
+<!--                        <div class="form-group row">-->
+<!--                            <label class="col-md-4"> </label>-->
+<!--                            <div class="col-md-8">-->
+<!--                                <input type="submit" class="btn btn-outline-warning btn-block" value="submit">-->
+<!--                            </div>-->
+<!--                        </div>-->
+                    </form>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, consequuntur et natus nemo reprehenderit voluptas. Culpa dolor dolores dolorum enim iste itaque obcaecati quae qui saepe sint. Cumque ducimus, eum!</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, consequuntur et natus nemo reprehenderit voluptas. Culpa dolor dolores dolorum enim iste itaque obcaecati quae qui saepe sint. Cumque ducimus, eum!</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, consequuntur et natus nemo reprehenderit voluptas. Culpa dolor dolores dolorum enim iste itaque obcaecati quae qui saepe sint. Cumque ducimus, eum!</p>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-success">Submit</button>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/bootstrap.bundle.js"></script>
+
+</body>
+</html>
